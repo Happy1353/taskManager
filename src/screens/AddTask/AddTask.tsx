@@ -10,6 +10,7 @@ export const AddTask: FC<AddTaskProps> = ({navigation}) => {
   const {
     title,
     setTitle,
+    color,
     setColor,
     imageUri,
     handleSaveTask,
@@ -33,6 +34,7 @@ export const AddTask: FC<AddTaskProps> = ({navigation}) => {
               {
                 backgroundColor: colorOption,
               },
+              color === colorOption && styles.activeColor,
             ]}
             onPress={() => setColor(colorOption)}
           />

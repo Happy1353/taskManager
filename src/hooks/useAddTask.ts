@@ -23,6 +23,9 @@ export const useAddTask = ({navigation}:AddTaskProps) => {
         completed: false,
       };
       dispatch(addTask(newTask));
+      setTitle('');
+      setColor('');
+      setImageUri(undefined);
       navigation.goBack();
     }
   };

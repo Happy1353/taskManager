@@ -23,4 +23,8 @@ export const styles = StyleSheet.create({
       height: 100,
       marginTop: 20,
     },
+    activeColor: {
+        borderColor: '#000000',
+        borderWidth: 2,
+    },
   });
